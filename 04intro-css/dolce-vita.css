@@ -1,0 +1,132 @@
+body {
+    font-family: 'Reddit Mono', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* header stuff here*/
+header {
+    background-color: #ffafcc;
+    padding: 1rem 2vw;
+}
+header h1 {
+    margin: 0;
+    color: #664651;
+}
+header p {
+    margin: 0;
+    color: #664651;
+    letter-spacing: .5px;
+}
+
+/* nav stuff goes here */
+nav {
+    background-color: #cdb4db;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+nav a {
+    font-size: 1.1rem;
+    text-decoration: none; 
+    color: #664651;
+    font-weight: 700;
+    display: block;
+    padding: .83rem 2rem;
+}
+nav li.active a {
+    background-color: #bde0fe;
+}
+nav a:hover {
+    color: white;
+}
+
+/* stuff for the main*/
+main{
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #cdb4db;
+    font-weight: 700;
+}
+
+main h2 {
+    color: #664651;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+main ol {
+    padding: .5rem 3vw;
+}
+
+main dl dt {
+    color: #664651;
+    font-weight: 700;
+}
+main dl dd {
+    color: #ffafcc;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #ffafcc;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #ffffff;
+    border-radius: .5rem; 
+    margin-top: 10px;
+    color: #664651;
+}
+
+main address a {
+    color: #664651;
+    font-weight: bold;
+}
+
+main address a:hover {
+    color: black;
+}
+
+main a {
+    color: #cdb4db;
+    font-weight: 700;
+}
+main a:hover {
+    color: #a2d2ff;
+}
+
+
+/* footer stuff goes here */
+footer {
+    background-color: #cdb4db;
+    text-align: center;
+    color: #664651;
+    padding: 1rem 0;
+    font-size: .8rem;    
+}
+footer a {
+    color: #664651;
+}
+
+
+
