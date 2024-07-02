@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Dolce Vita</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="description" content="Dolce Vita Bakery Website">
+        <meta name="author" content="Ivett Owens">
+        <link rel="stylesheet" href="dolce-vita.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <h1>Dolce Vita</h1>
+            <p>Sweetening your Taste with a Byte</p>
+        </header>
+        <!-- Start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="order.html">Order Now</a></li>
+            </ul>
+        </nav>
+        <!-- Start of the page content -->
+        <main>
+            <h1 id="menu">Order Now</h1>
+            <form method="GET" class="myForm" action="thanks.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label> 
+                    <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label> 
+                    <label>Email*<input type="email" name="email" required placeholder="youremail@order.com"></label> 
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Cakes</legend>
+                    <label><input type="checkbox" name="vanilla" value="chosen">Vanilla Cake</label>
+                    <label><input type="checkbox" name="tresleches" value="chosen">Tres Leches</label>
+                    <label><input type="checkbox" name="chocolate" value="chosen">Chocolate Cake</label>
+                    <label><input type="checkbox" name="coldcake" value="chosen">Guatemalan Cold Cake</label>
+                    <label><input type="checkbox" name="carrot" value="chosen">Carrot Cake</label>
+                    <label><input type="checkbox" name="cookies" value="chosen">MM Cookies</label>
+                    <label><input type="checkbox" name="buttercookies" value="chosen">Butter Cookies</label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Cake Options</legend>
+                    <label>Cake Filling
+                        <select name="filling"> 
+                            <option value="none">Please Select</option>
+                            <option value="condensedmilk">Condensed Milk</option>    
+                            <option value="chocolateganache">Chocolate Ganache</option>  
+                            <option value="strawberrysyrup">Strawberry Syrup</option>
+                            <option value="tresleches">Tres Leches</option>  
+                            <option value="seasonalfruits">Seasonal Fruits</option>  
+                        </select>
+                    </label>
+                    <label>Layers<input type="number" value="1" min="1" max="3"></label>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Delivery Method</legend>
+                    <label><input type="radio" name="method" value="pickup">Local Pickup (Free)</label>
+                    <label><input type="radio" name="method" value="standard">Standard (Up to 2 layers) $20</label>
+                    <label><input type="radio" name="method" value="large">Large (3 layers) $100</label> 
+                </fieldset>
+                
+                <label>Allergy Information
+                    <textarea name="comments">Please add any allergies</textarea> 
+                </label>
+                
+                <input type="submit" value="Order">
+            </form>
+        </main>
+        <!-- Start of the page footer  -->
+        <footer>
+            <p>&copy; 2024 &bull; Ivett A. Owens &bull; <a href="mailto:medranoaburto@gmail.com">Email Us</a></p>
+        </footer>
+    </body>
+</html>
