@@ -1,0 +1,298 @@
+*{box-sizing: border-box;}
+
+body {
+    font-family: 'Reddit Mono', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* header stuff here*/
+header {
+    background-color: white;
+    padding: 1rem 2vw;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: flex-end;
+}
+header div {
+    padding-left:  2vw;
+}
+header div img {
+    width: 100%;
+    height: auto;
+}
+header div h1 {
+    margin: 0 1rem;
+    color: #664651;
+}
+header p {
+    margin: 8px;
+    color: #664651;
+    letter-spacing: .5px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* nav stuff goes here */
+    nav {
+        background-color: #cdb4db;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none; 
+        text-align: center;
+        color: #664651;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+        border-bottom: solid 1px white;
+    }
+    nav li.active a {
+        background-color: #bde0fe;
+        background-image: linear-gradient(to bottom, #bde0fe, #72bdfd);
+    }
+    nav a:hover {
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* nav stuff goes here */
+    nav {
+        background-color: #cdb4db;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none; 
+        color: #664651;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    }
+    nav li.active a {
+        background-color: #bde0fe;
+        background-image: linear-gradient(to bottom, #bde0fe, #72bdfd);
+    }
+    nav a:hover {
+        color: white;
+    }
+}
+
+/* stuff for the main*/
+main {
+    padding: 1rem 2vw;
+}
+main h1 {
+    color: #cdb4db;
+    font-weight: 700;
+}
+
+main h2 {
+    color: #664651;
+    margin-bottom: .2rem;
+}
+
+main p {
+    color: #2f3133;
+    margin: 0 0 .3rem 0;
+}
+
+main dl dt {
+    color: #664651;
+    font-weight: 700;
+}
+main dl dd {
+    color: #ffafcc;
+    font-size: .9rem;
+    font-weight: 700;
+}
+
+main ul {
+    list-style-type: circle;
+}
+main ul li {
+    line-height: 125%;
+    margin-bottom: .5rem;
+    font-size: .9rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #ffafcc;
+    padding: .5rem;
+    width: 12.5rem;
+    border: 1px solid #ffffff;
+    border-radius: .5rem; 
+    margin-top: 10px;
+    color: #664651;
+}
+
+main address a {
+    color: #664651;
+    font-weight: bold;
+}
+
+main address a:hover {
+    color: black;
+}
+
+main a {
+    color: #cdb4db;
+    font-weight: 700;
+}
+main a:hover {
+    color: #a2d2ff;
+}
+
+.hero {
+    width: 100%;
+    margin: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    div.gallery {
+        width: 100%;
+    }
+
+    div.gallery figure {
+        width: 100%;
+        margin: 5vh 0;
+    }
+    div.gallery figure img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    }
+    div.gallery figcaption {
+        text-align: center;
+        font-size: .8rem;
+        color: #664651;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    div.gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.gallery figure {
+        margin: .5rem 2% 0 0; 
+    }
+    div.gallery figure img:hover {
+           box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    }
+    div.gallery figcaption {
+        text-align: center;
+        font-size: .8rem;
+        color: #664651;
+    }
+}
+
+.myForm fieldset {
+    border: 1px solid #bde0fe;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    color: #664651;
+}
+.myForm legend  {
+    font-size: .8rem;
+}
+.myForm label {
+    margin: .5rem;
+    color: #664651;
+}
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm [type=number], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], .myForm [type=email], .myForm [type=number], .myForm select, .myForm textarea {
+    border: solid 1px #888;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+    color: #664651;
+}
+
+.myForm texarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(156,51,53,0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #ffafcc;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+table.about-us {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+table.about-us th {
+    background-color: #cdb4db;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left
+}
+table.about-us td {
+    color: #664651;
+    padding: .4rem 2vw;
+}
+table.about-us tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+table.about-us tr:hover {
+    background-color: #bde0fe;
+}
+
+table.about-us tr td:nth-child(3) {
+    text-align: right;
+}
+
+
+/* footer stuff goes here */
+footer {
+    background-color: #cdb4db;
+    text-align: center;
+    color: #664651;
+    padding: 1rem 0;
+    font-size: .8rem;  
+    clear: both;
+}
+footer a {
+    color: #664651;
+}
+
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
